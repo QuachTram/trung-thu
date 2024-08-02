@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Trung Thu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            background: #f0e4d7; /* Màu nền thay thế nếu hình ảnh không có */
+            overflow-x: hidden; /* Ngăn cuộn ngang */
+        }
+        .frame {
+            position: relative;
+            width: 100vw; /* Chiều rộng của khung bằng chiều rộng viewport */
+            height: 100vh; /* Chiều cao của khung bằng chiều cao viewport */
+            overflow: hidden;
+            background: url('./trungthu.jpg') no-repeat center center;
+            background-size: cover; /* Đảm bảo hình ảnh bao phủ toàn bộ khung */
+        }
+        .message-container {
+            position: absolute;
+            top: 40%; /* Căn giữa theo chiều dọc */
+            left: 50%; /* Căn giữa theo chiều ngang */
+            transform: translate(-50%, -50%); /* Căn giữa theo cả hai chiều */
+            background: rgba(0, 0, 0, 0.5); /* Nền bán trong suốt */
+            padding: 10px; /* Khoảng cách bên trong */
+            border-radius: 35px; /* Bo góc cho nền */
+        }
+        .message {
+            font-size: 3em; /* Kích thước chữ vừa phải */
+            font-family: 'Dancing Script', cursive; /* Sử dụng phông chữ thư pháp */
+            color: red; /* Màu đỏ cho chữ mặc định */
+            text-align: center; /* Canh giữa chữ */
+            margin: 0; /* Xóa khoảng cách ngoài */
+            transition: color 0.3s ease; /* Hiệu ứng chuyển màu mượt mà */
+            cursor: pointer; /* Hiệu ứng con trỏ khi hover */
+            text-decoration: none; /* Loại bỏ gạch dưới */
+        }
+        .message:hover {
+            color: yellow; /* Màu vàng khi hover */
+        }
+        .scroll-section {
+            width: 100vw; /* Chiều rộng của khung bằng chiều rộng viewport */
+            height: 100vh; /* Chiều cao của khung bằng chiều cao viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url('./ruoc-den-trung-thu-2jpg.jpg') no-repeat center center; /* Màu nền của phần cuộn */
+            background-size: cover;
+            text-align: center;
+        }
+        .mess {
+            font-size: 2em; /* Kích thước chữ vừa phải */
+            font-family: 'Great Vibes', cursive; /* Sử dụng phông chữ thư pháp mới */
+            color: white; /* Màu trắng cho chữ */
+            text-align: center; /* Canh giữa chữ */
+            margin: 0;
+            padding: 20px; /* Khoảng cách bên trong */
+            background: rgba(0, 0, 0, 0.5); /* Nền bán trong suốt */
+            border-radius: 20px; /* Bo góc cho nền */
+            max-width: 90%; /* Giới hạn chiều rộng để vừa khung */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+            }
+        .footer {
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            color: rgb(238, 238, 237);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <div class="message-container">
+            <a href="#scroll-section" class="message">
+                Tết Đoàn Viên
+            </a>
+        </div>
+    </div>
+    <div id="scroll-section" class="scroll-section">
+        <div class="mess">
+            <h1 style="color: hotpink">Lời Yêu Thương!</h1>
+            <p style="color: rgb(54, 238, 255)">
+                Trong dịp đặc biệt này, con xin gửi đến gia đình mình những lời chúc ấm áp nhất.<br>
+                Mong rằng mỗi khoảnh khắc bên nhau đều tràn ngập niềm vui và hạnh phúc.<br>
+                Chúc gia đình luôn giữ được sự đoàn kết, yêu thương và sức khỏe dồi dào.<br>
+                Chúc cho gia đình chúng ta mãi mãi gắn bó và hạnh phúc,<br>
+                không chỉ trong dịp lễ mà mỗi ngày trong năm.<br>
+            </p>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; Ngọc Trâm</p>
+    </footer>
+</body>
+</html>

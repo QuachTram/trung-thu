@@ -1,0 +1,28 @@
+*{
+    margin: 5rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+}
+.triangle{
+    height: 65rem;
+    width: 40rem;
+    border-right: 20rem solid transparent;
+    border-left: 20rem solid transparent ;
+    border-bottom: 65rem solid green;
+    margin: -5rem;
+}
+.Rectangle{
+    height: 15rem;
+    width: 18rem;
+    background-color: brown;
+    padding: 0;
+    border: 5rem;
+    margin: 0 rem;
+
+}
